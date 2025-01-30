@@ -1,48 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WBDK7RW2');</script>
+<!-- End Google Tag Manager -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maintenance Logs</title>
-</head>
+    <title>Sample Website</title>
+   </head>
 <body>
-    <h1>Maintenance Logs</h1>
+   <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WBDK7RW2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
-    <h2>PC</h2>
-    <ul>
-        {% for log in logs['PC'] %}
-            <li>{{ log['timestamp'] }} - {{ log['description'] }}</li>
-        {% endfor %}
-    </ul>
-
-    <h2>Printers</h2>
-    <ul>
-        {% for log in logs['Printers'] %}
-            <li>{{ log['timestamp'] }} - {{ log['description'] }}</li>
-        {% endfor %}
-    </ul>
-
-    <h2>Equipment</h2>
-    <ul>
-        {% for log in logs['Equipment'] %}
-            <li>{{ log['timestamp'] }} - {{ log['description'] }}</li>
-        {% endfor %}
-    </ul>
-
-    <h2>Log Maintenance</h2>
-    <form action="{{ url_for('log_maintenance_route') }}" method="post">
-        <label for="category">Category:</label>
-        <select name="category" id="category">
-            <option value="PC">PC</option>
-            <option value="Printers">Printers</option>
-            <option value="Equipment">Equipment</option>
-        </select>
-        <br>
-        <label for="description">Description:</label>
-        <textarea name="description" id="description" required></textarea>
-        <br>
-        <button type="submit">Log Maintenance</button>
-    </form>
+    <h1>Welcome to My Sample Website</h1>
+    <p>This is a sample web page for Digital Marketing practice.</p>
 </body>
 </html>
